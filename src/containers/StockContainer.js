@@ -8,7 +8,7 @@ class StockContainer extends Component {
     return (
       <div>
         <h2>Stocks</h2>
-        {this.props.stocks.map(s => <Stock click={this.props.click} key={s.id} stock={s}/>)}
+        {this.props.stocks && this.props.stocks.map(s => <Stock click={this.props.click} key={s.id} stock={s}/>)}
       </div>
     );
   }
